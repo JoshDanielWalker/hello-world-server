@@ -6,7 +6,7 @@ A minimal Node.js HTTP server that responds with "Hello, World!".
 
 ## Production
 
-**Live URL:** https://hello-world-server.onrender.com
+**Live URL:** https://hello-world-server-wr2y.onrender.com
 
 Deployed on [Render](https://render.com) with automatic HTTPS. Auto-deploys on every push to `main`.
 
