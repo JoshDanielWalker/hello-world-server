@@ -16,8 +16,17 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}/`);
-});
+function start(port, host) {
+  return new Promise((resolve) => {
+    server.listen(port || PORT, host || HOST, () => {
+      console.log(`Server running at http://${host || HOST}:${port || PORT}/`);
+      resolve(server);
+    });
+  });
+}
 
-module.exports = server;
+if (require.main === module) {
+  start();
+}
+
+module.exports = { server, start };
