@@ -1,5 +1,7 @@
 # Hello World HTTP Server
 
+[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+
 A minimal Node.js HTTP server that responds with "Hello, World!".
 
 ## Requirements
