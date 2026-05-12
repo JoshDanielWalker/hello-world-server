@@ -14,7 +14,7 @@ describe('GET /', () => {
     const res = await request(server).get('/');
     expect(res.status).toBe(200);
     expect(res.headers['content-type']).toMatch(/text\/plain/);
-    expect(res.text).toBe('Hello, World!\n');
+    expect(res.text).toBe('Hello, Universe!\n');
   });
 });
 
