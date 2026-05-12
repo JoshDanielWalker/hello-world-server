@@ -6,7 +6,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 const server = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello Universe v2\n');
+    res.end('Night Night\n');
   } else if (req.method === 'GET' && req.url === '/health') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('OK\n');
